@@ -4,6 +4,11 @@
   min-width: 200px;
   transition: all 0.4s ease-in-out;
 }
+@media (max-width: 576px) {
+  .my-card{
+    transform: scale(0.7);
+  }
+}
 .imgMovie {
   transition: all 0.4s ease-in-out;
 }
