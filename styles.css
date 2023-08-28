@@ -1,0 +1,21 @@
+.my-card {
+  border: 2px black solid;
+  max-width: 250px;
+  min-width: 200px;
+  transition: all 0.4s ease-in-out;
+}
+.imgMovie {
+  transition: all 0.4s ease-in-out;
+}
+.my-card:hover {
+  transform: scale(1.06, 1.06);
+  opacity: 1.1;
+  border: 1px solid wheat;
+  z-index: 4;
+  border: 3px black solid;
+}
+.showPokemon {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
