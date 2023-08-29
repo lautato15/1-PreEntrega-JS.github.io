@@ -33,7 +33,7 @@ for (let pokemon of pokemons) {
   col.classList.add(
     "col-6",
     "col-md-4",
-    "mt-3",
+    "mt-lg-3",
     "justify-content-center",
     "d-flex"
   );
@@ -44,6 +44,7 @@ for (let pokemon of pokemons) {
   card.id = "card" + (pokemon.id + 1);
   card.classList.add(
     "my-card",
+    "mb-2",
     "text-center",
     "rounded-5",
     "shadow",
@@ -91,10 +92,16 @@ function selectPokemon(id) {
   colShow2.classList.add("col-12", "col-md-6");
   colShow1.innerHTML = "<img/>";
   const img = colShow1.querySelector("img");
-  img.src = "./img/pokedex.png";
+  img.src = "./assets/img/pokedex.png";
   img.style = "width: 300px; height: 300px;";
 
   colShow2.innerHTML = `
+  <div class=" px-2 border border-black rounded-3 bg-success-subtle mb-2 title">
+            <h2 class="m-0"
+              >POKEDEX!
+              </h2
+            >
+  </div>
   <div class="mt-3 border border-black border-2 rounded-bottom-5 p-5 bg-secondary-subtle">
     <p class="m-0 text-danger">&#920 &#920</p>
     <div id="content" class="border border-black border-2 row ${pokemons[id].bgColor}">

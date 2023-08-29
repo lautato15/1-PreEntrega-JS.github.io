@@ -24,3 +24,10 @@
   display: flex;
   align-items: center;
 }
+.title{
+  font-family: "BITWONDER"
+}
+@font-face {
+  font-family: "BITWONDER";
+  src: url(./assets/fonts/8bit_wonder/8-BIT\ WONDER.TTF);
+}
